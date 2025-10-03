@@ -10,7 +10,7 @@ int main() {
         }
         if(x)printf("%d\n", x);
         
-    }while(x)
+    }while(x);
 
     return 0;
 }

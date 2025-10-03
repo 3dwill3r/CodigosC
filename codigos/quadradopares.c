@@ -3,13 +3,11 @@
 int calcquadrado(int n)
 {
     int i;
-    for (i = 1; i <= n; i++)
-    {
-        if (i % 2 == 0)
-        {
-            printf("%d^2 = %d\n", i, i * i);
-        }
+    for (i = 2; i <= n; i+=2){
+        printf("%d^2 = %d\n", i, i * i);
     }
+    
+    return i;
 }
 
 int main()
