@@ -3,19 +3,25 @@
 int main()
 {
 
-    int x, i;
-    scanf("%d", &x);
-    for (i = 0; i < x; i++)
+    int x, i, n, dentro = 0, fora = 0;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
     {
-        if (x >= 10 || x <= 20)
+        scanf("%d", &x);
+
+        if (x >= 10 && x <= 20)
         {
-            printf("%d in", x);
+            dentro++;
         }
         else
         {
-            printf("%d out", x);
+            fora++;
         }
     }
+
+    
+    printf("%d in\n", dentro);
+    printf("%d out\n", fora);
 
     return 0;
 }
