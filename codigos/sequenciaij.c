@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
+    int i, j, inicioJ = 7;
 
-    int i, j;
-    for (i = 1; i <= 9; i += 2)
-    {
-        for (j = 7; j >= 5; j--)
-        {
+    for (i = 1; i <= 9; i += 2) {
+        for (j = inicioJ; j >= inicioJ - 2; j--) {
             printf("I=%d J=%d\n", i, j);
         }
+        inicioJ += 2;
     }
+
     return 0;
 }
